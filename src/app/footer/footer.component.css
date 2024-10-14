@@ -1,6 +1,6 @@
 footer {
     margin-top: 10em;
-    border-top: 2px solid rgb(7, 87, 159);
+    box-shadow: 0 -2px 5px rgba(164, 164, 164, 0.5);
 }
 
 #footerTop {
@@ -50,10 +50,12 @@ li {
     list-style-type: none;
     text-decoration: none;
     margin-top: 0.5em;
+    color: rgb(7, 87, 159);
+    font-weight: bold;
 }
 
 img {
-    width: 15em;
+    width: 20em;
 }
 
 li > a {
@@ -61,15 +63,28 @@ li > a {
     color: rgb(7, 87, 159);
     font-weight: bold;
     display: flex;
-    align-items: center;
+    
 }
+li>a:hover{
+    color: rgb(255, 93, 98);
 
+}
 i {
-    color: rgb(7, 87, 159);
+    color: rgb(255, 93, 98);
     font-size: 1.2em;
     margin-right: 0.3em;
+    font-weight: bold;
 }
 
 h2 {
     color: rgb(255, 93, 98);
+}
+#ulServices{
+    margin-left:-2em;
+}
+#ulContact{
+    text-align: end;
+}
+#ulContact>li>a{
+    justify-content: flex-end;
 }

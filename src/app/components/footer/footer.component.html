@@ -10,16 +10,18 @@
             </ul>
         </div>
         <div id="footerLogo">
-            <a href="/" id="linkImg"><img src="Logo_Manolek.png" alt="Logo_Manolek" ></a>
+            <a routerLink="/" id="linkImg" data-value="" (click)="regularNavigate($event)">
+                <img src="Logo_Manolek.png" alt="Logo_Manolek" />
+            </a>
         </div>
         <div id="footerServices">
             <h2>Onze diensten</h2>
-            <ul id="ulServices">
-                <li><a href=""><i class="bi bi-caret-right"></i>Verwarming</a></li>
-                <li><a href=""><i class="bi bi-caret-right"></i>Sanitair</a></li>
-                <li><a href=""><i class="bi bi-caret-right"></i>Nieuwbouw en Renovatie</a></li>
-                <li><a href=""><i class="bi bi-caret-right"></i>Elektriciteit</a></li>
-                <li><a href=""><i class="bi bi-caret-right"></i>Ventilatie en Onderhoud</a></li>
+            <ul id="ulServices" (click)="regularNavigate($event)">
+                <li><a class="button" data-value="heating" ><i class="bi bi-caret-right" ></i> Verwarming</a></li>
+                <li><a class="button" data-value="sanitary" ><i class="bi bi-caret-right" ></i> Sanitair</a></li>
+                <li><a class="button" data-value="constructionRenovation" ><i class="bi bi-caret-right"></i> Nieuwbouw en Renovatie</a></li>
+                <li><a class="button" data-value="electrical" ><i class="bi bi-caret-right"></i> Elektriciteit</a></li>
+                <li><a class="button" data-value="ventilationMaintenance"><i class="bi bi-caret-right"></i> Ventilatie en Onderhoud</a></li>
             </ul>
         </div>
     </div>

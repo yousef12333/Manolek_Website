@@ -1,5 +1,6 @@
 img {
     width: 7em; 
+    cursor: pointer;
 }
 
 #headerTop {
@@ -9,6 +10,7 @@ img {
 #contactHeader {
     display: flex;
     margin-left: 1em;
+    cursor: pointer;
 }
 
 #linkImg {
@@ -65,6 +67,7 @@ nav a, #servicesDropdown {
     font-weight: bold;
     position: relative; 
     overflow: hidden;
+    cursor: pointer;
 }
 
 

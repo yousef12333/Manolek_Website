@@ -4,8 +4,7 @@ import { HeatingComponent } from './components/heating/heating.component';
 import { SanitaryComponent } from './components/sanitary/sanitary.component';
 import { ConstructionRenovationComponent } from './components/construction-renovation/construction-renovation.component';
 import { ElectricalComponent } from './components/electrical/electrical.component';
-import { VentilationMaintenanceComponent } from './components/ventilation-maintenance/ventilation-maintenance.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
@@ -16,6 +15,5 @@ export const routes: Routes = [
     {path:'electrical', component: ElectricalComponent},
     {path:'about', component: AboutComponent},
     {path:'contact', component: ContactComponent},
-    {path:'ventilationMaintenance', component: VentilationMaintenanceComponent},
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

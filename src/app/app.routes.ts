@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { HeatingComponent } from './components/heating/heating.component';
-import { SanitaryComponent } from './sanitary/sanitary.component';
-import { ConstructionRenovationComponent } from './construction-renovation/construction-renovation.component';
-import { ElectricalComponent } from './electrical/electrical.component';
-import { VentilationMaintenanceComponent } from './ventilation-maintenance/ventilation-maintenance.component';
+import { SanitaryComponent } from './components/sanitary/sanitary.component';
+import { ConstructionRenovationComponent } from './components/construction-renovation/construction-renovation.component';
+import { ElectricalComponent } from './components/electrical/electrical.component';
+import { VentilationMaintenanceComponent } from './components/ventilation-maintenance/ventilation-maintenance.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
     {path:'', component: HomeComponent},

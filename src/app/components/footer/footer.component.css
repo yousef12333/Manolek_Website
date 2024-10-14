@@ -80,6 +80,7 @@ i {
 
 h2 {
     color: rgb(255, 93, 98);
+    font-weight: bold;
 }
 #ulServices{
     margin-left:-2em;

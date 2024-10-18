@@ -10,8 +10,8 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  @ViewChild('firstOption', { static: false }) firstOption!: ElementRef; // Reference to the first option
-  selectedService: string = ''; // Property to bind the selected value
+  @ViewChild('firstOption', { static: false }) firstOption!: ElementRef;
+  selectedService: string = ''; 
 
   constructor(private router: Router) {}
 
@@ -19,7 +19,7 @@ export class HeaderComponent {
     const value = event.target.value;
     if (value) {
       this.router.navigate([`/${value}`]);
-      this.resetFirstOptionText(); // Reset the option text
+      this.resetFirstOptionText(); 
     }
   }
 
@@ -28,19 +28,18 @@ export class HeaderComponent {
 
     if (value) {
       this.router.navigate([`/${value}`]);
-      this.resetFirstOptionText(); // Reset the option text
+      this.resetFirstOptionText(); 
     } else {
       this.router.navigate(['']);
-      this.resetFirstOptionText(); // Reset the option text
+      this.resetFirstOptionText();
     }
   }
 
-  // Function to reset the first option text using innerHTML
   resetFirstOptionText(): void {
-    // Use setTimeout to ensure the change detection works properly
+
     setTimeout(() => {
-      this.firstOption.nativeElement.innerHTML = 'Diensten&nbsp;&nbsp;&nbsp;▾'; // Reset the text
-      this.selectedService = ''; // Reset the selected service
+      this.firstOption.nativeElement.innerHTML = 'Diensten&nbsp;&nbsp;&nbsp;▾'; 
+      this.selectedService = ''; 
     });
   }
 }

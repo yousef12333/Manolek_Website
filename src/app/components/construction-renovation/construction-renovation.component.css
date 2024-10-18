@@ -1,0 +1,42 @@
+.encompassPage {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr); /* Twee kolommen per rij */
+}
+
+.content-container {
+    display: flex;
+}
+
+.service-image {
+    width: auto; /* Pas de breedte aan op basis van je ontwerp */
+    height: 30rem; /* Houd de aspect ratio van de afbeelding */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding de container vult */
+    place-items: center;
+}
+
+.text-content {
+    flex: 1;
+}
+
+h5 {
+    line-height: 1.7;
+}
+
+.button {
+    padding: 1rem 2rem;
+    border: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    z-index: 1; 
+    color: rgb(255, 93, 98);
+    background-color: rgb(7, 87, 159); 
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.3s ease; 
+    color: rgb(7, 87, 159); 
+    background-color: rgb(255, 93, 98);
+}

@@ -1,0 +1,23 @@
+.button {
+    position:relative;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: transparent;
+    font-size: 1.3rem;
+    font-weight:500;
+    margin-top: 1rem;
+    z-index: 1; 
+    color: rgb(255, 93, 98);
+    background-color: rgb(7, 87, 159); 
+    margin-left: 3rem
+}
+.appSquare{
+    max-height: 5rem;
+}
+.button:hover{
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.3s ease; 
+    color: rgb(7, 87, 159); 
+    background-color: rgb(255, 93, 98);
+    
+    
+}

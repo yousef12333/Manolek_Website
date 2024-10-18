@@ -1,7 +1,5 @@
 .square {
-  width: 50%; 
-  /* height: 20rem; Remove this line */
-  position: relative;
+  width: 70%; 
   padding: 3vw; 
   box-sizing: border-box;
 }

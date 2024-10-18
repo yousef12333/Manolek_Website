@@ -38,7 +38,7 @@
   }
   .titleName, .companyName {
     position: relative;
-    display: inline-block; /* Ensures proper alignment with the underline */
+    display: inline-block; 
     animation-name: landing;
     animation-duration: 2s;
     animation-timing-function: ease-out;

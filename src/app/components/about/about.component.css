@@ -1,10 +1,9 @@
 .encompassPage {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 2rem;
     justify-items: center;
-    padding-left: 15rem; 
-    padding-right: 15rem;
+    padding-left: 5rem; 
+    padding-right: 5rem;
     padding-top: 3rem;
 }
 
@@ -18,8 +17,70 @@
     max-height: 35rem;
     min-height: 20rem;
 }
+.services-icons {                /* Use flexbox to align sections */
+    justify-content: space-between;
+}
+
+.specialisation, .mission {
+    display: flex;                     /* Use flexbox for the specialisation and mission sections */
+    flex-direction: column;            /* Stack the title above the icons */
+    align-items: center;                 /* Allow both sections to take equal width */
+}
+
+.icons-row {
+    display: flex;                    /* Space between title and icons */
+}
+
+.icon {
+    display: flex;                     /* Align icons vertically */
+    flex-direction: column;            /* Stack icon and text vertically */
+    align-items: center;  
+    margin: 2rem;
+}
+
+h2 {
+    font-size: 2rem;            /* Add some space below the title */
+    color: #07579f;                   /* Color for section titles */
+    font-weight: bold;
+}
 
 
+.icon i {
+    font-size: 3rem; /* Grootte van de iconen */
+    color: #07579f; /* Standaard kleur */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon p {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Hover-effect voor iconen en tekst */
+.icon:hover i {
+    color: rgb(255, 93, 98); /* Verander de kleur bij hover */
+}
+
+.icon:hover p {
+    color: rgb(255, 93, 98); /* Verander de tekstkleur bij hover */
+}
+
+/* Voeg een subtiele bounce-animatie toe */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Bouncing effect als de pagina laadt */
+.icon i {
+    animation: bounce 2s infinite ease-in-out;
+    animation-delay: calc(0.1s * var(--i));
+}
 
 h5 {
     line-height: 1.7;

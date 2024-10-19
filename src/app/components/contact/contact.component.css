@@ -35,10 +35,78 @@ h5 {
     color: rgb(255, 93, 98);
     background-color: rgb(7, 87, 159); 
 }
-
+.contactInfo{
+   padding:2rem;
+    background-color: rgb(7, 87, 159); 
+    padding-bottom: 3rem;
+}
 .button:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, width 0.3s ease; 
     color: rgb(7, 87, 159); 
     background-color: rgb(255, 93, 98);
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 0.5em;
+    color: rgb(7, 87, 159);
+    font-weight: bold;
+}
+
+
+li > a, #telephoneContact, #times {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    
+}
+a:hover{
+    color: rgb(255, 93, 98);
+
+}
+i {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    color: rgb(7, 87, 159); 
+    font-size: 1.2em;
+    margin-right: 0.3em;
+    font-weight: bold;
+    background-color: white;
+    height:2rem;
+    width:2rem;
+    border: white 1rem bold;
+    border-radius: 50%;
+}
+#ulContact>li>a:hover i{
+    color: rgb(255, 93, 98);
+    transform: scale(1.1);
+}
+.title, #ulContact, #telephoneContact, #times {
+    position: relative;
+    z-index: 2;
+}
+h2 {
+    color: white;
+    font-weight: bold;
+}
+.be{
+    color: white;
+}
+#ulContact{
+    text-align:left;
+    color: white;
+    margin-top:1rem;
+    line-height: 2;
+    margin-left:-2rem;
+}
+#ulContact>li>a{
+    justify-content: flex-start;
+    color: white;
+}
+#ulContact>li>a:hover{
+    color: rgb(255, 93, 98);
 }

@@ -1,30 +1,44 @@
-h5{
-    line-height: 1.7;
- 
+.encompassPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+    justify-items: center;
+    padding-left: 15rem; 
+    padding-right: 15rem;
+    padding-top: 3rem;
 }
 
-h6{
-    font-size: 1px
+.content-container {
+    display: flex;
+}
+
+.service-image {
+    width: 100%;
+    height: 100%; 
+    max-height: 35rem;
+    min-height: 20rem;
+}
+
+
+
+h5 {
+    line-height: 1.7;
 }
 
 .button {
-    position:relative;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
     border: transparent;
     font-size: 1.5rem;
-    font-weight:500;
+    font-weight: 500;
     margin-top: 1rem;
     z-index: 1; 
     color: rgb(255, 93, 98);
     background-color: rgb(7, 87, 159); 
 }
-.appSquare{
-    max-height: 5rem;
-}
-.button:hover{
+
+.button:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, width 0.3s ease; 
     color: rgb(7, 87, 159); 
     background-color: rgb(255, 93, 98);
-    
 }

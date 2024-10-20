@@ -37,14 +37,16 @@ h5 {
 }
 .contactInfo{
    padding:2rem;
-    background-color: rgb(7, 87, 159); 
+   background: linear-gradient(40deg, rgb(7, 88, 159), rgba(7, 118, 159));
     padding-bottom: 3rem;
+    box-shadow: 0rem 0.8rem 0.2rem 0.3rem rgb(0 0 0 / 48%)
 }
 .button:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, width 0.3s ease; 
     color: rgb(7, 87, 159); 
     background-color: rgb(255, 93, 98);
+    
 }
 
 li {

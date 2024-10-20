@@ -6,6 +6,7 @@
     padding-left: 15rem; 
     padding-right: 15rem;
     padding-top: 3rem;
+    box-shadow: 0 0.1rem 0.5rem rgb(164, 164, 164);
 }
 
 .content-container {

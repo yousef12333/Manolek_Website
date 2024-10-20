@@ -6,6 +6,7 @@
     padding-left: 15rem; 
     padding-right: 15rem;
     padding-top: 3rem;
+    box-shadow: 0 0.1rem 0.5rem rgb(164, 164, 164);
 }
 
 .content-container {
@@ -46,7 +47,6 @@ h5 {
     z-index: 3;
     display:grid;
     grid-template-rows: 4.5rem 3rem 4rem;
-    padding: 5rem;
     padding-top: 8rem;
     align-items: start;
     justify-content: center;

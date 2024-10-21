@@ -6,7 +6,7 @@
     padding-left: 15rem; 
     padding-right: 15rem;
     padding-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .content-container {
@@ -36,6 +36,7 @@ h5 {
     color: rgb(255, 93, 98);
     background-color: rgb(7, 87, 159); 
 }
+
 .contactInfo{
    padding:2rem;
    background: linear-gradient(40deg, rgb(7, 88, 159), rgba(7, 118, 159));
@@ -113,3 +114,4 @@ h2 {
 #ulContact>li>a:hover{
     color: rgb(255, 93, 98);
 }
+#map { height: 25rem; }

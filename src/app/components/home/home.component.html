@@ -4,7 +4,7 @@
         companyName="Manolek & Sanitaire" 
         title="Uw specialist in duurzame warmteoplossingen voor elke bouwfase" 
         imageUrl="Frontpage.jpg">
-        <button class="button">Meer weten</button>
+        <button class="button" [routerLink]="['/contact']">Meer weten</button>
     </app-frontpage-banner>
 </div>
     <div class="alignBottom">
@@ -12,7 +12,7 @@
             <div class="parallaxDiv">
                 <span class="titleName">Wil je meer weten?</span>  
                 <span class="extraText">Profiteer van onze expertise en klantgerichte aanpak</span>
-                <button class="buttonParallax">Contacteer ons</button>
+                <button class="buttonParallax" [routerLink]="['/contact']">Contacteer ons</button>
             </div>
         </app-parallax-contact>
     </div>

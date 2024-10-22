@@ -1,0 +1,62 @@
+.slide-img {
+  width: 15rem;
+  height: 15rem;
+  display: block;
+  margin: auto;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.owl-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.custom-nav-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(7, 87, 159);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-nav-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.left-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.right-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.owl-nav {
+  position: relative;
+  width: 100%;
+}
+
+.owl-nav button {
+  position: absolute;
+  background: none;
+  border: none;
+}
+.images{
+  display: flex;
+}

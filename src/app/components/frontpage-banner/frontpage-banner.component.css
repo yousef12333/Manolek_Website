@@ -36,6 +36,7 @@
     color: rgb(255, 93, 98);
     font-weight: 500;
     font-size: 35px;
+    top: 1rem;
   }
   .titleName, .companyName {
     position: relative;

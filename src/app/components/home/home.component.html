@@ -1,19 +1,58 @@
 <div class="coverAll">
     <div class="alignTop">
-    <app-frontpage-banner 
-        companyName="Manolek & Sanitaire" 
-        title="Uw specialist in duurzame warmteoplossingen voor elke bouwfase" 
-        imageUrl="Frontpage.jpg">
+      <app-frontpage-banner 
+          companyName="Manolek & Sanitaire" 
+          title="Uw specialist in duurzame warmteoplossingen voor elke bouwfase" 
+          imageUrl="Frontpage.jpg">
         <button class="button" [routerLink]="['/contact']">Meer weten</button>
-    </app-frontpage-banner>
-</div>
-    <div class="alignBottom">
-        <app-parallax-contact imageUrl="Parallax2.jpg">
-            <div class="parallaxDiv">
-                <span class="titleName">Wil je meer weten?</span>  
-                <span class="extraText">Profiteer van onze expertise en klantgerichte aanpak</span>
-                <button class="buttonParallax" [routerLink]="['/contact']">Contacteer ons</button>
-            </div>
-        </app-parallax-contact>
+      </app-frontpage-banner>
     </div>
-</div>
+    <h5>Onze diensten</h5>
+    <div class="carousel">
+      
+      <swiper-container slides-per-view="1" speed="100" loop="true" css-mode="true" pagination navigation>
+        <swiper-slide class="swiper-slide">
+          <div class="slide-content">
+            <img src="Badkuip.jpg" alt="Slide Image" class="slide-image" />
+            <p class="slide-text">This is the text for Slide 1</p>
+            <button class="slide-button">Learn More</button>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="swiper-slide">
+          <div class="slide-content">
+            <img src="Badkuip.jpg" alt="Slide Image" class="slide-image" />
+            <p class="slide-text">This is the text for Slide 2</p>
+            <button class="slide-button">Learn More</button>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="swiper-slide">
+          <div class="slide-content">
+            <img src="Badkuip.jpg" alt="Slide Image" class="slide-image" />
+            <p class="slide-text">This is the text for Slide 3</p>
+            <button class="slide-button">Learn More</button>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="swiper-slide">
+          <div class="slide-content">
+            <img src="Badkuip.jpg" alt="Slide Image" class="slide-image" />
+            <p class="slide-text">This is the text for Slide 4</p>
+            <button class="slide-button">Learn More</button>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+      <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+  
+    <div class="alignBottom">
+      <app-parallax-contact imageUrl="Parallax2.jpg">
+        <div class="parallaxDiv">
+          <span class="titleName">Wil je meer weten?</span>  
+          <span class="extraText">Profiteer van onze expertise en klantgerichte aanpak</span>
+          <button class="buttonParallax" [routerLink]="['/contact']">Contacteer ons</button>
+        </div>
+      </app-parallax-contact>
+    </div>
+  </div>

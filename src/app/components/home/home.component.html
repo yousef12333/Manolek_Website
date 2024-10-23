@@ -7,45 +7,54 @@
         <button class="button" [routerLink]="['/contact']">Meer weten</button>
       </app-frontpage-banner>
     </div>
-    <h5>Onze diensten</h5>
-    <div class="carousel">
+    <div class="inbetween">
+      <h4 class="slider-title">Onze diensten</h4>
       
-      <swiper-container slides-per-view="1" speed="100" loop="true" css-mode="true" pagination navigation>
-        <swiper-slide class="swiper-slide">
-          <div class="slide-content">
-            <img src="Badkuip.jpg" alt="Slide Image" class="slide-image" />
-            <p class="slide-text">This is the text for Slide 1</p>
-            <button class="slide-button">Learn More</button>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide">
-          <div class="slide-content">
-            <img src="Badkuip.jpg" alt="Slide Image" class="slide-image" />
-            <p class="slide-text">This is the text for Slide 2</p>
-            <button class="slide-button">Learn More</button>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide">
-          <div class="slide-content">
-            <img src="Badkuip.jpg" alt="Slide Image" class="slide-image" />
-            <p class="slide-text">This is the text for Slide 3</p>
-            <button class="slide-button">Learn More</button>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide">
-          <div class="slide-content">
-            <img src="Badkuip.jpg" alt="Slide Image" class="slide-image" />
-            <p class="slide-text">This is the text for Slide 4</p>
-            <button class="slide-button">Learn More</button>
-          </div>
-        </swiper-slide>
-      </swiper-container>
-      <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+      <div class="carousel">
+        <swiper-container slides-per-view="1" speed="5000" loop="true" css-mode="true" pagination navigation>
+          <swiper-slide>
+            <div class="slide-content">
+              <img src="Sanitary-icon.png" alt="Sanitair" class="slide-image"/>
+              <h5>Sanitair</h5>
+              <div id="underlineTitle"></div>
+              <p class="slide-text">Wij bieden professionele sanitaire installaties, van het plaatsen van badkamers tot het installeren van
+                waterleidingen en afvoersystemen, alles met oog op kwaliteit en duurzaamheid.</p>
+              <button class="slide-button" [routerLink]='["sanitary"]'>Meer weten</button>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide-content">
+              <img src="Heat-pump-icon.png" alt="Verwarming" class="slide-image"/>
+              <h5>Verwarming</h5>
+              <div id="underlineTitle"></div>
+              <p class="slide-text"> Of het nu gaat om vloerverwarming of energiezuinige warmtepompen, wij leveren verwarmingsoplossingen die
+                comfort bieden en bijdragen aan een duurzame toekomst.</p>
+              <button class="slide-button"[routerLink]='["heating"]'>Meer weten</button>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide-content">
+              <img src="Renovation-icon.png" alt="Nieuwbouw & renovatie" class="slide-image"/>
+              <h5>Nieuwbouw & renovatie</h5>
+              <div id="underlineTitle"></div>
+              <p class="slide-text">Bij zowel nieuwbouwprojecten als renovaties zorgen wij voor de juiste installatie van duurzame systemen
+                en energie-efficiënte oplossingen, afgestemd op uw bouwfase.</p>
+              <button class="slide-button" [routerLink]='["constructionRenovation"]'>Meer weten</button>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide-content">
+              <img src="Electricity_Icon.png" alt="Elektriciteit" class="slide-image"/>
+              <h5>Elektriciteit</h5>
+              <div id="underlineTitle"></div>
+              <p class="slide-text"> Van elektrische bedrading tot slimme installaties, wij leveren veilige en moderne elektrische systemen die
+                voldoen aan de hoogste normen.</p>
+              <button class="slide-button" [routerLink]='["electrical"]'>Meer weten</button>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
     </div>
-
-  
     <div class="alignBottom">
       <app-parallax-contact imageUrl="Parallax2.jpg">
         <div class="parallaxDiv">

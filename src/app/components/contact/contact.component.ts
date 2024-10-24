@@ -22,7 +22,7 @@ export class ContactComponent {
   var title = L.marker([51.2019702, 4.3908187], {
     icon: L.divIcon({
         className: 'text-below-marker',
-        html: "Manolek&nbsp;(BV)",
+        html: "Manolek&nbsp;BV",
         iconSize: [400, 40],
         iconAnchor: [30, 2] 
     })

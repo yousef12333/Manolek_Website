@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     setInterval((): any => {
       const swiper: any = document.querySelector('swiper-container');
       swiper.swiper.slideNext();
-    }, 3000); 
+    }, 7000); 
   }
 }
 

@@ -18,9 +18,14 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     register(); 
-    setInterval((): any => {
+  }
+  
+  ngAfterViewInit(): void {
+    setInterval(() => {
       const swiper: any = document.querySelector('swiper-container');
-      swiper.swiper.slideNext();
+      if (swiper && swiper.swiper) {
+        swiper.swiper.slideNext();
+      }
     }, 7000); 
   }
 }

@@ -149,3 +149,96 @@ h5 {
     font-weight: 100;
     grid-row: 2/3;
   }
+  @media(max-width: 1200px){
+    h5{
+        font-size: 1.5vw;
+    }
+    .encompassPage{
+        padding-left: 5rem;
+    padding-right: 5rem;
+    }
+    .buttonParallax{
+        font-size: 1.1rem;
+    }
+    .icon{
+        margin:1rem;
+        font-size: 1.2vw;
+    }
+
+  }
+@media(max-width: 900px){
+    .icon{
+        margin:1rem;
+        font-size: 3vw;
+    }
+    .icon p{
+        font-size: 1rem;
+    }
+    .icon i{
+        font-size: 2rem;
+    }
+    .services-icons{
+        display: contents;
+    }
+    .specialisation{
+        align-items: center;
+    }
+    .button{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .encompassPage{
+        padding-left: 0rem;
+        padding-right:0rem;
+        gap:0rem;
+        display:block;
+    }
+    .service-image:nth-last-child(even) {
+        display: none;
+    }
+    .service-image{
+        margin-bottom: 1rem;
+        min-height:8rem;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+    }
+    .parallaxDiv {
+        display:grid;
+        grid-template-rows: 3.5rem 4rem 3rem;
+        
+     padding-top: 8rem; 
+     align-items: start; 
+     justify-content: center; 
+    justify-items: center;
+      }
+    
+      .buttonParallax {
+        width: 60vw;
+        height: 2.8rem;
+      }
+      .titleName {
+        font-size: 2rem;
+      }
+    
+      .extraText {
+        font-size: 1rem;
+      }
+    h5{
+        font-size: 3vw;
+    }
+    .title{
+        font-size: 5vw;
+    }
+}
+@media(max-width:500px){
+    .icon p{
+        font-size: 0.6rem;
+    }
+}
+  @media(max-width:400px){
+    .specialisation{
+        padding-left:0rem;
+        padding-right:0rem;
+    }
+  }

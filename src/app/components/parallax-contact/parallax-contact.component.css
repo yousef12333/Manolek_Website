@@ -24,4 +24,8 @@
     align-items: center;
     z-index: 1;
 }
-
+@media(max-width:900px){
+    .page-banner{
+        background-size: 160% 100%;
+      }
+}

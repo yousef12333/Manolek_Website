@@ -203,3 +203,27 @@ h6{
     padding: 10px;
     font-weight: bold;
 }
+@media (max-width: 900px) {
+
+    #contactHeader {
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    #headerTop, #headerBottom {
+        flex-direction: column;
+            align-items: center;
+            padding: 0rem;
+    }
+    #contactHeader {
+        justify-content: center;
+    }
+}
+@media(max-width:500px){
+
+    #contactHeader {
+        flex-direction: column;
+        align-items: center;
+        margin:0rem;
+    }
+}

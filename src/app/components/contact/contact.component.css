@@ -65,6 +65,7 @@ li > a, #telephoneContact, #times {
     color: white;
     font-weight: bold;
     display: flex;
+    font-size: 0.85rem;
     
 }
 a:hover{
@@ -115,3 +116,49 @@ h2 {
     color: rgb(255, 93, 98);
 }
 #map { height: 25rem; }
+@media (max-width: 1100px) {
+
+    .encompassPage {
+        display: flex; 
+        flex-direction: column; 
+        padding: 0vw 5vw 0vw 5vw;
+    }
+    
+    .contactInfo {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .encompassPage + .contactInfo {
+        margin-top: 1rem;
+    }
+    .button {
+      margin-left: 0;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .parallaxDiv {
+      padding-top: 4rem;
+      grid-template-rows: 3.5rem 2.5rem 3rem;
+    }
+  
+    .buttonParallax {
+      width: 60vw;
+      height: 2.8rem;
+    }
+  
+    .titleName {
+      font-size: 2rem;
+    }
+  
+    .extraText {
+      font-size: 1rem;
+    }
+  
+  
+    .carousel {
+      padding: 5rem 10vw 2rem 10vw;
+    }
+  
+  }

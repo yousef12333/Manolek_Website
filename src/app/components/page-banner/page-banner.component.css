@@ -59,3 +59,8 @@ h1 {
   top: -1rem;
   z-index:-1;
 }
+@media(max-width:900px){
+  .page-banner{
+    margin-bottom: 1rem;
+  }
+}

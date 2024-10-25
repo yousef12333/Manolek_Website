@@ -1,3 +1,4 @@
+<div class="coverAll">
 <app-page-banner title="Sanitair" imageUrl="TitelFoto_Sanitair.jpg"></app-page-banner>
 <div class="encompassPage">
     <app-square title="Buizen Installeren">
@@ -52,10 +53,13 @@
     </app-square>
     <img src="Wc.jpg" alt="Toilet" class="service-image">
 </div>
-<app-parallax-contact imageUrl="Parallax.jpg">
-    <div class="parallaxDiv">
-            <span class="titleName">Wil je meer weten?</span>  
-            <span class="extraText">Profiteer van onze expertise en klantgerichte aanpak</span>
-            <button class="buttonParallax" [routerLink]="['/contact']">Contacteer ons</button>
+<div class="alignBottom">
+    <app-parallax-contact imageUrl="Parallax2.jpg">
+        <div class="parallaxDiv">
+                <span class="titleName">Wil je meer weten?</span>  
+                <span class="extraText">Profiteer van onze expertise en klantgerichte aanpak</span>
+                <button class="buttonParallax" [routerLink]="['/contact']">Contacteer ons</button>
+        </div>
+        </app-parallax-contact>
     </div>
-    </app-parallax-contact>
+    </div>

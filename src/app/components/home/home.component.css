@@ -75,7 +75,7 @@
     grid-row: 3/4;
 }
 .slide-text{
-  width:20vw;
+  width:70%;
 }
 .slider-title {
   text-align: center;
@@ -115,9 +115,10 @@ swiper-container{
 .carousel {
   width: 100%;
   height: 100%;
-  padding: 5rem 30rem 2rem 30rem;
+  padding: 5rem 36vw 2rem 36vw;
   position: relative;
 }
+
 
 .swiper-slide {
   display: flex;
@@ -186,4 +187,44 @@ swiper-container{
 
 .swiper-pagination {
   color: rgb(7, 87, 159);
+}
+@media (max-width: 1500px) {
+  .carousel{
+    padding: 5rem 30vw 2rem 30vw;
+  }
+}
+@media (max-width: 900px) {
+
+
+  .button {
+    margin-left: 0;
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .parallaxDiv {
+    padding-top: 8rem; 
+    grid-template-rows: 3.5rem 2.5rem 3rem;
+  }
+
+  .buttonParallax {
+    width: 60vw;
+    height: 2.8rem;
+  }
+ 
+  .titleName {
+    font-size: 2rem;
+  }
+
+  .extraText {
+    font-size: 1rem;
+  }
+  .page-banner{
+    background-size: 115% 70%;
+  }
+
+  .carousel {
+    padding: 5rem 10vw 2rem 10vw;
+  }
+
 }

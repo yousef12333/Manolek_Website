@@ -10,14 +10,14 @@ import { VentilationComponent } from './components/ventilation/ventilation.compo
 import { CergaComponent } from './components/cerga/cerga.component';
 
 export const routes: Routes = [
-    {path:'', component: HomeComponent},
-    {path:'heating', component: HeatingComponent},
-    {path:'ventilation', component: VentilationComponent},
-    {path:'sanitary', component: SanitaryComponent},
-    {path:'constructionRenovation', component: ConstructionRenovationComponent},
-    {path:'electrical', component: ElectricalComponent},
-    {path:'cerga', component: CergaComponent},
-    {path:'about', component: AboutComponent},
-    {path:'contact', component: ContactComponent},
+    { path: '', component: HomeComponent },
+    { path: 'heating', loadChildren: () => import('./components/heating/heating/heating.module').then(m => m.HeatingModule) },
+    { path: 'ventilation', loadChildren: () => import('./components/ventilation/ventilation/ventilation.module').then(m => m.VentilationModule) },
+    { path: 'sanitary', loadChildren: () => import('./components/sanitary/sanitary/sanitary.module').then(m => m.SanitaryModule) },
+    { path: 'constructionRenovation', loadChildren: () => import('./components/construction-renovation/construction-renovation/construction-renovation.module').then(m => m.ConstructionRenovationModule) },
+    { path: 'electrical', loadChildren: () => import('./components/electrical/electrical/electrical.module').then(m => m.ElectricalModule) },
+    { path: 'cerga', loadChildren: () => import('./components/cerga/cerga/cerga.module').then(m => m.CergaModule) },
+    { path: 'about', loadChildren: () => import('./components/about/about/about.module').then(m => m.AboutModule) },
+    { path: 'contact', loadChildren: () => import('./components/contact/contact/contact.module').then(m => m.ContactModule) },
     { path: '**', redirectTo: '', pathMatch: 'full' }
-];
+  ];

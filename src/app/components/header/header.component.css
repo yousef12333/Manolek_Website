@@ -237,16 +237,30 @@ h6{
         margin:0rem;
     }
     nav, #servicesDropdown{
-        font-size: 3vw;
-        padding: 0px 3px 3px 3px;
+        font-size: 3.35vw;
+        padding: 0px 3px 0px 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
     nav a{
-        padding: 0px 3px 3px 3px;
+        padding: 0px 6px 6px 6px;
+       
+    }
+    #servicesDropdown{
+        padding: 0px 6px 6px 6px;
+        
     }
 }
 @media(max-width:400px){
 
     nav{
-        margin:auto;
+        margin:0;
+    }
+}
+@media(max-width:250px){
+    #contactHeader a {
+        font-size: 6vw;
     }
 }

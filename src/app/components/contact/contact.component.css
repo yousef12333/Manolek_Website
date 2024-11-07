@@ -188,10 +188,32 @@ h2 {
     h5{
         font-size:5vw;
     }
+    li > a, #telephoneContact, #times {
+
+      font-size: 4vw;
+      
+  }
+  i{
+    height: 4vh;
+    width: 6.3vw;
+  }
+  .title{
+    font-size: 8vw;
+  }
+  .contactInfo{
+    padding: 2rem 0rem 0rem 2rem;
+  }
   }
   @media(max-width:250px){
     h5{
         font-size:6vw;
+    }
+    .contactInfo{
+      padding: 1rem 0rem 0rem 1rem;
+    }
+    i{
+      height: 4vh;
+      width: 10vw;
     }
     .buttonParallax{
       font-size: 3.9vw;

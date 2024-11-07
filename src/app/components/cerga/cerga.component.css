@@ -62,6 +62,9 @@ h5 {
     color: rgb(7, 87, 159);
     background-color: rgb(255, 93, 98);
     grid-row: 3/4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .buttonParallax:hover{
     width: 15vw;
@@ -135,11 +138,13 @@ h5 {
       .buttonParallax {
         width: 60vw;
         height: 2.8rem;
+        
       }
+     
       .titleName {
-        font-size: 2rem;
+        font-size: 6vw;
       }
-    
+      
       .extraText {
         font-size: 1rem;
       }
@@ -150,14 +155,22 @@ h5 {
         font-size: 5vw;
     }
 }
-@media(max-width:500px){
-    h5{
-        font-size:4vw;
-    }
+@media(max-width:700px){
+  .titleName {
+    font-size: 7vw;
   }
+}
+@media(max-width:500px){
+  h5{
+      font-size:4vw;
+  }
+  .titleName {
+    font-size: 10vw;
+  }
+}
   
 @media(max-width:400px){
-
+ 
     p.slide-text{
         font-size: 4vw;
     }
@@ -166,9 +179,11 @@ h5 {
     }
     .titleName{
       font-size: 10vw;
+      position:relative;
     }
     .extraText{
       font-size: 4vw;
+      
     }
     .buttonParallax{
       font-size: 4vw;

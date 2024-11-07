@@ -42,6 +42,9 @@
     color: rgb(7, 87, 159);
     background-color: rgb(255, 93, 98);
     grid-row: 3/4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .buttonParallax:hover{
     width: 15vw;
@@ -58,7 +61,6 @@
 }
 .titleName{
     color: white;
-    font-size: 3rem;
     font-weight: 400;
     grid-row: 1/2;
   }
@@ -204,16 +206,16 @@ swiper-container{
 
   .parallaxDiv {
     padding-top: 8rem; 
-    grid-template-rows: 3.5rem 2.5rem 3rem;
   }
 
   .buttonParallax {
     width: 60vw;
     height: 2.8rem;
+    
   }
  
   .titleName {
-    font-size: 10vw;
+    font-size: 6vw;
   }
   
   .extraText {
@@ -228,9 +230,17 @@ swiper-container{
   }
 
 }
+@media(max-width:700px){
+  .titleName {
+    font-size: 8vw;
+  }
+}
 @media(max-width:500px){
   h5{
       font-size:4vw;
+  }
+  .titleName {
+    font-size: 10vw;
   }
 }
 
@@ -244,9 +254,12 @@ swiper-container{
   }
   .titleName{
     font-size: 10vw;
+    top:2rem;
+    position:relative;
   }
   .extraText{
     font-size: 4vw;
+    
   }
   .buttonParallax{
     font-size: 4vw;
@@ -255,6 +268,7 @@ swiper-container{
       font-size:5vw;
   }
 }
+
 @media(max-width:250px){
   h5{
       font-size:6vw;

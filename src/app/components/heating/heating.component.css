@@ -150,3 +150,38 @@ h5 {
         font-size: 5vw;
     }
 }
+@media(max-width:500px){
+    h5{
+        font-size:4vw;
+    }
+  }
+  
+@media(max-width:400px){
+
+    p.slide-text{
+        font-size: 4vw;
+    }
+    .slider-title{
+      font-size:8vw;
+    }
+    .titleName{
+      font-size: 10vw;
+    }
+    .extraText{
+      font-size: 4vw;
+    }
+    .buttonParallax{
+      font-size: 4vw;
+    }
+    h5{
+        font-size:5vw;
+    }
+  }
+  @media(max-width:250px){
+    h5{
+        font-size:6vw;
+    }
+    .buttonParallax{
+      font-size: 3.9vw;
+    }
+  }

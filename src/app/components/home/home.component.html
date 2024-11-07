@@ -1,7 +1,7 @@
 <div class="coverAll">
     <div class="alignTop">
       <app-frontpage-banner 
-          companyName="Manolek & Sanitaire BV" 
+          companyName="Manolek BV" 
           title="Uw specialist in duurzame warmteoplossingen voor elke bouwfase" 
           imageUrl="Frontpage.jpg">
         <button class="button" [routerLink]="['/contact']">Meer weten</button>
@@ -14,11 +14,12 @@
         <swiper-container slides-per-view="1" speed="5000" loop="true" css-mode="true" pagination navigation>
           <swiper-slide>
             <div class="slide-content">
-              <img src="Sanitary-icon.png" alt="Sanitair" class="slide-image"/>
-              <h5>Sanitair</h5>
+              <img src="Electricity_Icon.png" alt="Elektriciteit" class="slide-image"/>
+              <h5>Elektriciteit</h5>
               <div id="underlineTitle"></div>
-              <p class="slide-text">Wij bieden professionele sanitaire installaties, van badkuipen tot kranen, met een sterke focus op kwaliteit en duurzaamheid.</p>
-              <button class="slide-button" [routerLink]='["sanitary"]'>Meer weten</button>
+              <p class="slide-text"> Van elektrische bedrading tot slimme installaties, wij leveren veilige en moderne elektrische systemen die
+                voldoen aan de hoogste normen.</p>
+              <button class="slide-button" [routerLink]='["electrical"]'>Meer weten</button>
             </div>
           </swiper-slide>
           <swiper-slide>
@@ -33,21 +34,29 @@
           </swiper-slide>
           <swiper-slide>
             <div class="slide-content">
-              <img src="Renovation-icon.png" alt="Nieuwbouw & renovatie" class="slide-image"/>
-              <h5>Nieuwbouw & renovatie</h5>
+                <img src="Ventilation-icon.png" alt="Ventilatie" class="slide-image"/>
+                <h5>Ventilatie</h5>
+                <div id="underlineTitle"></div>
+                <p class="slide-text">Onze ventilatiesystemen zorgen voor een gezonde binnenlucht, met aandacht voor energie-efficiëntie en comfort.</p>
+                <button class="slide-button" [routerLink]='["ventilation"]'>Meer weten</button>
+            </div>
+        </swiper-slide>
+          <swiper-slide>
+            <div class="slide-content">
+              <img src="Sanitary-icon.png" alt="Sanitair" class="slide-image"/>
+              <h5>Sanitair</h5>
               <div id="underlineTitle"></div>
-              <p class="slide-text">Bij zowel nieuwbouwprojecten als renovaties zorgen wij voor de juiste installatie van verschillende voorzieningen, zoals keukens en zwembaden, afgestemd op uw bouwfase.</p>
-              <button class="slide-button" [routerLink]='["constructionRenovation"]'>Meer weten</button>
+              <p class="slide-text">Wij bieden professionele sanitaire installaties, van badkuipen tot kranen, met een sterke focus op kwaliteit en duurzaamheid.</p>
+              <button class="slide-button" [routerLink]='["sanitary"]'>Meer weten</button>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div class="slide-content">
-              <img src="Electricity_Icon.png" alt="Elektriciteit" class="slide-image"/>
-              <h5>Elektriciteit</h5>
+              <img src="Renovation-icon.png" alt="Nieuwbouw & renovatie" class="slide-image"/>
+              <h5>Nieuwbouw & renovatie</h5>
               <div id="underlineTitle"></div>
-              <p class="slide-text"> Van elektrische bedrading tot slimme installaties, wij leveren veilige en moderne elektrische systemen die
-                voldoen aan de hoogste normen.</p>
-              <button class="slide-button" [routerLink]='["electrical"]'>Meer weten</button>
+              <p class="slide-text">Bij zowel nieuwbouwprojecten als renovaties zorgen wij voor de professionele installatie van camera's en andere voorzieningen, afgestemd op uw bouwfase.</p>
+              <button class="slide-button" [routerLink]='["constructionRenovation"]'>Meer weten</button>
             </div>
           </swiper-slide>
         </swiper-container>

@@ -129,7 +129,22 @@ h2 {
         text-align: center;
     }
 
-    #ulContact>li>a {
-        justify-content: center;
-    }
 }
+@media(max-width:400px){
+
+    img {
+        width: 67vw;
+    }
+    h2 {
+        font-size: 8vw;
+    }
+    a, li{
+        font-size:4vw;
+    }
+    div#footerBottom {
+        font-size: 3.8vw;
+    }
+    div#footerTop{
+        padding: 2rem 0rem;
+    }
+  }

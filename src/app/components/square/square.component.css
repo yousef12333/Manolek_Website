@@ -57,8 +57,15 @@
     flex-direction: column;
   }
 }
-
-
-
+@media(max-width:500px){
+  .content-wrapper{
+    padding: 1.5rem 0.5rem;
+  }
+}
+@media(max-width:400px){
+  .title{
+    font-size:8vw;
+  }
+}
 
 

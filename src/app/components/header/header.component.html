@@ -10,8 +10,8 @@
         </ul>
         <ul>
             <li>
-                <a href="mailto:manolekensanitaire@gmail.com">
-                    <i class="bi bi-envelope"></i> manolekensanitaire&#64;gmail.com
+                <a href="mailto:info@manolek.be">
+                    <i class="bi bi-envelope"></i>info&#64;manolek.be
                 </a>
             </li>
         </ul>
@@ -26,12 +26,14 @@
         <div class="dropdown-container">
             <select name="services" id="servicesDropdown" [(ngModel)]="selectedService" (change)="navigate($event)">
                 <option value="" disabled hidden #firstOption>Diensten&nbsp;&nbsp;&nbsp;▾</option>
+                <option value="electrical">Elektriciteit</option>
                 <option value="heating">Verwarming</option>
+                <option value="ventilation">Ventilatie</option>
                 <option value="sanitary">Sanitair</option>
                 <option value="constructionRenovation">Nieuwbouw & renovatie</option>
-                <option value="electrical">Elektriciteit</option>
             </select>
         </div>
+        <a class="button" data-value="cerga" (click)="regularNavigate($event)">Erkenning</a>
         <a class="button" data-value="about" (click)="regularNavigate($event)">Over ons</a>
         <a class="button" data-value="contact" (click)="regularNavigate($event)">Contact</a>
     </nav>

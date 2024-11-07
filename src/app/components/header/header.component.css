@@ -209,6 +209,12 @@ h6{
         justify-content: center;
     }
 }
+@media (max-width: 700px) {
+   
+    nav, #servicesDropdown{
+        font-size: 2vw;
+    }
+}
 @media (max-width: 600px) {
     #headerTop, #headerBottom {
         flex-direction: column;
@@ -218,6 +224,10 @@ h6{
     #contactHeader {
         justify-content: center;
     }
+    nav, #servicesDropdown{
+        font-size: 16px;
+    }
+
 }
 @media(max-width:500px){
 
@@ -225,5 +235,18 @@ h6{
         flex-direction: column;
         align-items: center;
         margin:0rem;
+    }
+    nav, #servicesDropdown{
+        font-size: 3vw;
+        padding: 0px 3px 3px 3px;
+    }
+    nav a{
+        padding: 0px 3px 3px 3px;
+    }
+}
+@media(max-width:400px){
+
+    nav{
+        margin:auto;
     }
 }

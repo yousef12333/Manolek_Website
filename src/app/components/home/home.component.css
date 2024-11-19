@@ -60,10 +60,11 @@
     grid-row: 3/4;
 }
 .titleName{
-    color: white;
-    font-weight: 400;
-    grid-row: 1/2;
-  }
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  grid-row: 1/2;
+}
   .extraText{
     color: white;
     font-size: 1.4rem;
